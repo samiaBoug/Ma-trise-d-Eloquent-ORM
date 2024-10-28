@@ -5,9 +5,7 @@ actor "Blogueur" as fc
 actor "Visiteur" as visiteur
 rectangle "Fonctionnalités" {
   usecase "CRUD articles" as UC1
- 
   usecase "CRUD Catégories" as UC2 
- 
   usecase "Consulter articles" as UC3
 
 
