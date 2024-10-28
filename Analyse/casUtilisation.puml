@@ -1,26 +1,24 @@
 @startuml
 left to right direction
-actor "Auteur" as fc
-actor "Admin" as admin
+actor "Blogueur" as fc
+
 actor "Visiteur" as visiteur
 rectangle "Fonctionnalités" {
   usecase "CRUD articles" as UC1
  
+  usecase "CRUD Catégories" as UC2 
  
-  usecase "Gestion des Catégories" as UC3 
-  usecase "CRUD auteurs" as UC4
-
-   usecase "Consulter articles" as UC2
+  usecase "Consulter articles" as UC3
 
 
   
 
 }
 fc -- UC1
-visiteur -- UC2
+visiteur -- UC3
 
-admin -- UC3
-admin -- UC4
+fc -- UC2
+
 
 
 @enduml
