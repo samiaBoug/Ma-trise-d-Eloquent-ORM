@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+actor "Auteur" as fc
+actor "Admin" as admin
+rectangle "Fonctionnalités" {
+  usecase "CRUD articles" as UC1
+  usecase "Consulter articles" as UC2
+ 
+  usecase "Gestion des Catégories" as UC3 
+  usecase "CRUD utilisateurs" as UC4
+
+
+
+}
+fc -- UC1
+fc -- UC2
+
+admin -- UC3
+admin -- UC4
+
+
+@enduml
