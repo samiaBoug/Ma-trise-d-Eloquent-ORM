@@ -9,8 +9,6 @@ rectangle "Fonctionnalités" {
   usecase "Gestion des Catégories" as UC3 
   usecase "CRUD utilisateurs" as UC4
 
-
-
 }
 fc -- UC1
 fc -- UC2
