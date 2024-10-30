@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+actor "Blogueur" as fc
+
+rectangle "Fonctionnalités" {
+  usecase "Ajouter articles" as UC1
+  usecase "Afficher articles" as UC2
+  usecase "Afficher catégories" as UC3
+}
+
+fc -- UC1
+fc -- UC2
+UC1 <.. UC3 : <<extend>> 
+@enduml
+
