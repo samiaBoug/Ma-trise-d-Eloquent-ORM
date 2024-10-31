@@ -1,0 +1,29 @@
+---
+Blog
+---
+classDiagram
+    class Article
+    Article : +id
+    Article : +title
+    Article : +content
+    Article : +datepublication
+    Article : +blogueur_id
+    Article : +categorie_id     
+
+    class Category
+    Category : +id
+    Category : +name
+
+    class Blogueur
+    Blogueur : +id
+    Blogueur : +name
+    Blogueur : +email
+    Blogueur : +password
+
+
+
+    Article "1" --> "*" Category
+    Article  "1"  --> "1" Blogueur
+
+
+
