@@ -7,7 +7,7 @@ rectangle "Fonctionnalités" {
   usecase "CRUD articles" as UC1
   usecase "CRUD Catégories" as UC2 
   usecase "Consulter articles" as UC3
-
+usecase "Authentification" as UC4
 
   
 
@@ -16,6 +16,9 @@ fc -- UC1
 visiteur -- UC3
 
 fc -- UC2
+
+   UC2 .-> UC4 : << include >>
+    UC1 .-> UC4 : << include >>
 
 
 
